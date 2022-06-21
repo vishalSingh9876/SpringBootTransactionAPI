@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RestApplicationTest",
+		"_postman_id": "0a910d5d-f9cb-2591-60bf-fa85a5d1bb70",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/transaction",
+			"request": {
+				"url": "http://localhost:8080/api/transaction",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"senderId\":\"sender@gmail.com\",\r\n\"receiverId\":\"receivedId@gmail.com\",\r\n\"amount\": 10.0\r\n}"
+				},
+				"description": "Post request to to do transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/transactions",
+			"request": {
+				"url": "http://localhost:8080/api/transactions",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"senderId\":\"sender@gmail.com\",\r\n\"receiverId\":\"receivedId@gmail.com\",\r\n\"amount\": 10.0\r\n}"
+				},
+				"description": "Get all transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/transactions/sender@gmail.com",
+			"request": {
+				"url": "http://localhost:8080/api/transactions/sender@gmail.com",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"senderId\":\"sender@gmail.com\",\r\n\"receiverId\":\"receivedId@gmail.com\",\r\n\"amount\": 10.0\r\n}"
+				},
+				"description": "Get transaction by senderID"
+			},
+			"response": []
+		}
+	]
+}
