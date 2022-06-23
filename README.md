@@ -15,7 +15,8 @@ In the run command, we have specified that the port 8080 on the container should
 
 *****************************
 
-Also attaching postman Json of basic testing.
+Also attached postman Json collection of basic testing that i have done for the API's.
+More Negative test cases could have been added.
 
 ************************************
 What more can be done:
