@@ -16,3 +16,10 @@ In the run command, we have specified that the port 8080 on the container should
 *****************************
 
 Also attaching postman Json of basic testing.
+
+************************************
+What more can be done:
+
+I can add validation frame work for client side parameter validation like @Email,@NotNull etc for sender and reciever. Also added controller advice for exception handling that can extended to give client the proper messages if validation fails.
+
+Also we can add JWT kind of authorization mechanism as well as swagger for API's.
