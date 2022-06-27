@@ -8,6 +8,7 @@ $ docker build -t springboot-test-application.jar .
 Check Docker springboot-test-application.jar
 
 $ docker image ls
+
 Run Docker springboot-test-application.jar
 
 $ docker run -p 9090:8080 springboot-test-application.jar
