@@ -4,6 +4,7 @@
 How to Dockerize Spring Boot Application
 
 $ docker build -t springboot-test-application.jar .
+
 Check Docker springboot-test-application.jar
 
 $ docker image ls
